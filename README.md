@@ -31,7 +31,7 @@ BitManipulation Maths GCD LCM SieveOfEratosthenes ModuloArithmetic
 
 | Day | Topic | Problem(s) Solved | Notes |
 |-----|-------|-------------------|-------|
-| 1   | Array | [Problem Link]()  | Summary here |
+| 1   | Array | [https://github.com/CODEMASTER-ABDULLAH-92/150-Days-Hard-Of-DSA/blob/main/Day1.cpp]()  | Summary here |
 | 2   | ...   | ...               | ...    |
 
 > 📝 This section will be updated daily.

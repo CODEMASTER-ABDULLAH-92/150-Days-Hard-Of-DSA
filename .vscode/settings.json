@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "*.exe": "ignore",
+        "locale": "cpp",
+        "__locale": "cpp"
+    }
+}

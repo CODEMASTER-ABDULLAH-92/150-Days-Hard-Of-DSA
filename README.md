@@ -37,10 +37,10 @@ Bit Manipulation | Number Theory | GCD | LCM | Sieve | Modulo Arithmetic
 
 ## 📆 Daily Progress
 
-| Day | Topic | Problem(s) Solved | Notes |
-|-----|-------|-------------------|-------|
-| 1   | Array | [Day1.cpp](https://github.com/CODEMASTER-ABDULLAH-92/150-Days-Hard-Of-DSA/blob/main/Day1.cpp) | Summary here |
-| 2   | ...   | ...               | ...   |
+| Day | Topic | Problem(s) Solved |
+|-----|-------|-------------------|
+| 1   | IF-Else and Pattrens | [Day1.cpp](https://github.com/CODEMASTER-ABDULLAH-92/150-Days-Hard-Of-DSA/blob/main/Day1.cpp) |
+| 2   | ...   | ...               |
 
 > 📝 This section will be updated daily.
 

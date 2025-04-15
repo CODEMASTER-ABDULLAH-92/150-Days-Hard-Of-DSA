@@ -445,3 +445,216 @@
 //  }   
 // return 0;
 // }
+
+
+
+// Home work of day 1 
+// Two numbers are given, print the bigger number, It is given that both numbers can’t be the same.
+
+
+// #include<iostream>
+// using namespace std;
+// int main(){
+//  int a = 10;
+//  int b =20;
+//  if (a > b)
+//  {
+//     cout<<a<<" is greater than "<<b;
+//  }
+//  else
+//  {
+//     cout<<b<<" is greater than "<<a;
+//  }
+    
+// return 0;
+// }
+
+
+
+// #include<iostream>
+// using namespace std;
+// int main(){
+//  int age;
+//  cout<<"Enter the age: ";
+//  cin>>age;
+//  if (age > 18)
+//  {
+//     cout<<"Adult";
+//  }
+//  else
+//  {
+//     cout<<"Teenager";
+//  }
+    
+// return 0;
+// }
+
+
+// #include<iostream>
+// using namespace std;
+// int main(){
+//  int age;
+//  cout<<"Enter the age: ";
+//  cin>>age;
+//  if (age < 12 || age > 65)
+//  {
+//     cout<<"You are  qualify for a discounted ticket price";
+//  }
+//  else
+//  {
+//     cout<<"You are not qualify for a discounted ticket price";
+//  }
+    
+// return 0;
+// }
+
+
+// Print all Odd numbers from 1 to n, take n as an input from the user. 
+
+// #include<iostream>
+// using namespace std;
+// int main(){
+//  int n;
+//  cout<<"Enter the n \n";
+//  cin>>n;
+//  for(int i = 1; i<= n; i++){
+//     if (i % 2 == 1)
+//     cout<<i<<" ";
+//  }   
+// return 0;
+// }
+
+
+// Print all numbers from 1 to n, which is divisible by 4. Take n as an input from the user.
+// #include<iostream>
+// using namespace std;
+// int main(){
+//  int n;
+//  cout<<"Enter the n ";
+//  cin>>n;
+//  for(int i = 1; i<= n; i++){
+//     if (i % 4 == 0)
+//     cout<<i<<" ";
+//  }   
+// return 0;
+// }
+
+
+
+// There is an Arithmetic Progression, First number is 220 and Common Difference is 7. So print all the numbers from 220 to 730 which follow the AP.
+
+// #include<iostream>
+// using namespace std;
+// int main(){
+//  for(int i = 220; i <= 730; i+=7)
+//  cout<<i<<" ";   
+// return 0;
+// }
+
+
+
+// ================>>>>> Print Sum of square of first n natural number.
+
+
+// #include<iostream>
+// using namespace std;
+// int main(){
+//     int n;
+//     int product = 1;
+//     int sum = 0;
+//     cout<<"Enter the Number: ";
+//     cin>>n;
+//     for(int i = 1; i <= n; i++){
+//         product = i*i;
+//         sum = sum + product;
+//     }
+//     cout<<"Total sum: "<<sum;
+// return 0;
+// }
+
+
+// Total sum of the cubes 
+
+// #include<iostream>
+// using namespace std;
+
+// int main() {
+//     int n;
+//     int sum = 0;
+
+//     cout << "Enter the Number: ";
+//     cin >> n;
+
+//     for (int i = 1; i <= n; i++) {
+//         sum = sum + (i * i * i);  // sum of cubes
+//     }
+
+//     cout << "Total sum of cubes: " << sum << endl;
+//     return 0;
+// }
+
+//         1 
+//       2 2 
+//     3 3 3 
+//   4 4 4 4 
+// 5 5 5 5 5 
+// #include<iostream>
+// using namespace std;
+// int main(){
+//  for(int row = 1; row<=5; row++){
+//     for(int col = 1; col <= 5 - row; col++){
+//         cout<<"  ";
+//     }
+//     for(int col = 1; col<=row; col++){
+//         cout<<row<<" ";
+//     }
+//     cout<<endl;
+//  }   
+// return 0;
+// }
+
+
+
+
+//         1 
+//       1 2 
+//     1 2 3 
+//   1 2 3 4 
+// 1 2 3 4 5
+
+// #include<iostream>
+// using namespace std;
+// int main(){
+//  for(int row = 1; row<=5; row++){
+//     for(int col = 1; col <= 5 - row; col++){
+//         cout<<"  ";
+//     }
+//     for(int col = 1; col<=row; col++){
+//         cout<<col<<" ";
+//     }
+//     cout<<endl;
+//  }   
+// return 0;
+// }
+
+
+//         1 
+//       2 1 
+//     3 2 1 
+//   4 3 2 1 
+// 5 4 3 2 1 
+// #include<iostream>
+// using namespace std;
+// int main(){
+//  for(int row = 1; row<=5; row++){
+//     for(int col = 1; col <= 5 - row; col++){
+//         cout<<"  ";
+//     }
+//     for(int col = row; col>=1; col--){
+//         cout<<col<<" ";
+//     }
+//     cout<<endl;
+//  }   
+// return 0;
+// }
+

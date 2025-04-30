@@ -35,12 +35,12 @@ Bit Manipulation | Number Theory | GCD | LCM | Sieve | Modulo Arithmetic
 
 ---
 
-## 📆 Daily Progress
+## Progress
 
-| Day | Topic | Problem(s) Solved |
+| Num | Topic | Problem(s) Solved |
 |-----|-------|-------------------|
-| 1   | IF-Else and Pattrens | [Day1.cpp](https://github.com/CODEMASTER-ABDULLAH-92/150-Days-Hard-Of-DSA/blob/main/Day1.cpp) |
-| 2   | ...   | ...               |
+| 1   | Searching | [Linear Search](https://mesh-dev.vercel.app/linearSearch) |
+| 2   |       |                |
 
 > 📝 This section will be updated daily.
 

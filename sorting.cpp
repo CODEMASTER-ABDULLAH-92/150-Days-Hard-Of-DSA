@@ -1,49 +1,45 @@
-// #include<iostream>
-// using namespace std;
-// void printArr(int arr[], int length){
-//     for(int i =0; i < length; i++){
-//         cout<<arr[i]<<" ";
+#include<iostream>
+#include<vector>
+using namespace std;
+// void selectionSort(vector<int>&vec){
+//     for(auto i = 0; i <= vec.size() - 1; i++ ){
+//         int minindex = i;
+//         for(auto j = i + 1; j<=vec.size() - 1; j++){
+//             if (vec[j] < vec[minindex])
+//             {
+//                 minindex = j;
+//             }
+//         }
+//         swap(vec[minindex], vec[i]);
 //     }
 // }
 
-// // void selectionSort(int arr[], int length){
-// //     for(int i = 0; i< length; i++){
-// //         int minIndex = i;
-// //         for(int j = i + 1; j < length; j++){
-// //             if (arr[minIndex] > arr[j])
-// //             {
-// //                 minIndex = j;
-// //             }
-// //         }
-// //         swap(arr[minIndex],arr[i]);
-// //     }
-// // }
-
-// // void bubbleSort(int arr[], int length){
-// //     for(int i = 0; i< length; i++){
-// //         for(int j = 0; j < length - i - 1; j++){
-// //             if (arr[j + 1] < arr[j] )
-// //             {
-// //                 swap(arr[j+1],arr[j]);
-// //             }
-// //         }
-// //     }
-// // }
-
-
-// void insertionSort(int arr[], int length){
-//     for(int i = 1; i < length; i++){
-//         for(int j = i; j >= 0; j--){
-//             if (arr[j - 1] > arr[j])
+// void bubbleSort(vector<int>& vec){
+//     for(auto i = 0; i< vec.size(); i++){
+//         for(auto j =0; j<vec.size() - i - 1; j++){
+//             if (vec[j+1] < vec[j] )
 //             {
-//                 swap(arr[j-1],arr[j]);
+//                 swap(vec[j+1],vec[j]);
 //             }
 //         }
 //     }
 // }
-// int main(){
-//     int arr[] = {92,45,72,64,11};
-//     insertionSort(arr,5);
-//     printArr(arr,5);
-// return 0;
-// }
+
+void insertionSort(vector<int>& vec){
+    for(auto i = 1; i < vec.size(); i++){
+        for(auto j = i; j>=0; j--){
+            if (vec[j - 1] > vec[j])
+            {
+                swap(vec[j - 1], vec[j]);
+            }
+        }
+    }
+}
+int main(){
+    vector<int> vec= {92,45,72,12,11,10};
+    insertionSort(vec);
+    for(auto item:vec){
+        cout<<item<<" ";
+    }
+return 0;
+}

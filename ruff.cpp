@@ -59,53 +59,92 @@
 // }
 
 
+// #include<iostream>
+// #include<vector>
+// using namespace std;
+
+// vector<int> findFirstAndLast(vector<int> &vec, int start, int end, int target){
+//     int first = -1, last = -1, mid;
+
+//     // find first 
+//     while (start <= end) {
+//         mid = start + (end - start) / 2;
+//         if (vec[mid] == target) {
+//             first = mid;
+//             end = mid - 1;
+//         }
+//         else if (vec[mid] < target) {
+//             start = mid + 1;
+//         }
+//         else {
+//             end = mid - 1;
+//         }
+//     }
+
+//     // find last
+//     start = 0;
+//     end = vec.size() - 1;
+//     while (start <= end) {
+//         mid = start + (end - start) / 2;
+//         if (vec[mid] == target) {
+//             last = mid;
+//             start = mid + 1;
+//         }
+//         else if (vec[mid] < target) {
+//             start = mid + 1;
+//         }
+//         else {
+//             end = mid - 1;
+//         }
+//     }
+
+//     return {first, last};
+// }
+
+// int main(){
+//     vector<int> vec = {1, 2, 3, 3, 4, 5, 6};
+//     vector<int> b = findFirstAndLast(vec, 0, vec.size() - 1, 3);
+//     for(auto item : b){
+//         cout << item << " ";
+//     }
+//     return 0;
+// }
+
+
 #include<iostream>
-#include<vector>
 using namespace std;
 
-vector<int> findFirstAndLast(vector<int> &vec, int start, int end, int target){
-    int first = -1, last = -1, mid;
+void sorting(int arr[], int length){
+    int count0 = 0, count1 = 0, count2 = 0;
 
-    // find first 
-    while (start <= end) {
-        mid = start + (end - start) / 2;
-        if (vec[mid] == target) {
-            first = mid;
-            end = mid - 1;
+    for(int i = 0; i < length; i++){
+        if(arr[i] == 0){
+            count0++;
         }
-        else if (vec[mid] < target) {
-            start = mid + 1;
+        else if(arr[i] == 1){
+            count1++;
         }
-        else {
-            end = mid - 1;
+        else{
+            count2++;
         }
     }
 
-    // find last
-    start = 0;
-    end = vec.size() - 1;
-    while (start <= end) {
-        mid = start + (end - start) / 2;
-        if (vec[mid] == target) {
-            last = mid;
-            start = mid + 1;
-        }
-        else if (vec[mid] < target) {
-            start = mid + 1;
-        }
-        else {
-            end = mid - 1;
-        }
+    for(int i = 0; i < count0; i++){
+        arr[i] = 0;
     }
-
-    return {first, last};
+    for(int i = count0; i < count0 + count1; i++){
+        arr[i] = 1;
+    }
+    for(int i = count0 + count1; i < length; i++){
+        arr[i] = 2;
+    }
 }
 
 int main(){
-    vector<int> vec = {1, 2, 3, 3, 4, 5, 6};
-    vector<int> b = findFirstAndLast(vec, 0, vec.size() - 1, 3);
-    for(auto item : b){
-        cout << item << " ";
+    int arr[] = {0,1,2,0,1,2,0,1,2};
+    sorting(arr, 9);
+    for(int i = 0; i < 9; i++){
+        cout << arr[i] << " ";
     }
     return 0;
 }

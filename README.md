@@ -1,4 +1,4 @@
-# 💪 150 Days Hard Of DSA
+<!-- # 💪 150 Days Hard Of DSA
 
 A **structured 150-day challenge** to master Data Structures and Algorithms (DSA) — perfect for **coding interviews**, **competitive programming**, and building **strong problem-solving skills**.
 
@@ -99,4 +99,4 @@ Bit Manipulation | Number Theory | GCD | LCM | Sieve | Modulo Arithmetic
 3. Track your progress and write notes.
 4. Share and grow with the community!
 
-
+ -->

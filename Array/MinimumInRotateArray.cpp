@@ -2,22 +2,7 @@
 #include<iostream>
 #include<vector>
 using namespace std;
-int findMin(vector<int>& nums) {
-    int start = 0;
-    int end = nums.size() - 1;
 
-    while (start < end) {
-        int mid = start + (end - start) / 2;
-
-        if (nums[mid] > nums[end]) {
-            start = mid + 1;
-        } else {
-            end = mid;
-        }
-    }
-
-    return nums[start];  // or nums[end], both are same here
-}
 
 int minInRotateArray(vector<int>& vec){
 
@@ -40,8 +25,8 @@ int minInRotateArray(vector<int>& vec){
     return vec[start];
 }
 int main(){
-    vector<int> vec = {12,14,16,0,1,2,3,4,5};
-    int result = findMin(vec);
+    vector<int> vec = {12,14,16,1,2,3,4,5};
+    int result = minInRotateArray(vec);
     cout<<result<<" ";
     return 0;
 }

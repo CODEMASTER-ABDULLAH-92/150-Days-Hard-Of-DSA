@@ -2,9 +2,9 @@
 #include<vector>
 using namespace std;
 // void selectionSort(vector<int>&vec){
-//     for(auto i = 0; i <= vec.size() - 1; i++ ){
+//     for(auto i = 0; i < vec.size(); i++ ){
 //         int minindex = i;
-//         for(auto j = i + 1; j<=vec.size() - 1; j++){
+//         for(auto j = i + 1; j<vec.size(); j++){
 //             if (vec[j] < vec[minindex])
 //             {
 //                 minindex = j;

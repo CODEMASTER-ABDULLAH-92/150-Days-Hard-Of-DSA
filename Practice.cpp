@@ -193,111 +193,111 @@
 
 // search in rotated array 
 
-#include<iostream>
-#include<vector>
-using namespace std;
-int rotatedArray(vector<int>& vec, int target){
-    int start = 0;
-    int end = vec.size() - 1;
-    int mid;
-    while (start<=end)
-    {
-        mid = start + (end - start) / 2;
-        if (vec[mid] == target)
-        {
-            return mid;
-        }
-        if (vec[mid] < vec[end] && vec[mid] < target)
-        {
-            start = mid + 1;
-        }
-        if (vec[mid] > vec[end] && vec[mid] > target)
-        {
-            end = mid - 1;
-        }
-    }
-    return -1;
-}
-int main(){
-vector<int> vec = {12,14,16,2,4,6,8};    
-int ans = rotatedArray(vec,14);
-cout<<"Ans: "<<ans<<" ";
-return 0;
-}
+// #include<iostream>
+// #include<vector>
+// using namespace std;
+// int rotatedArray(vector<int>& vec, int target){
+//     int start = 0;
+//     int end = vec.size() - 1;
+//     int mid;
+//     while (start<=end)
+//     {
+//         mid = start + (end - start) / 2;
+//         if (vec[mid] == target)
+//         {
+//             return mid;
+//         }
+//         if (vec[mid] < vec[end] && vec[mid] < target)
+//         {
+//             start = mid + 1;
+//         }
+//         if (vec[mid] > vec[end] && vec[mid] > target)
+//         {
+//             end = mid - 1;
+//         }
+//     }
+//     return -1;
+// }
+// int main(){
+// vector<int> vec = {12,14,16,2,4,6,8};    
+// int ans = rotatedArray(vec,14);
+// cout<<"Ans: "<<ans<<" ";
+// return 0;
+// }
 
 
 
 
-#include <iostream>
-#include <vector>
-using namespace std;
+// #include <iostream>
+// #include <vector>
+// using namespace std;
 
-// Q1. Peak Index in a Mountain Array.
-int findKthPositive(vector<int> &arr, int k)
-}
+// // Q1. Peak Index in a Mountain Array.
+// int findKthPositive(vector<int> &arr, int k)
+// }
 
-// Q2. Find Minimum in Rotated Sorted Array.
-int findMin(vector<int> &nums)
-}
+// // Q2. Find Minimum in Rotated Sorted Array.
+// int findMin(vector<int> &nums)
+// }
 
-// Q3. Search in Rotated Sorted Array.
-int search(vector<int> &arr, int target)
-{
-    int start = 0, end = arr.size() - 1, mid;
-    while (start <= end)
-    {
-        mid = start + (end - start) / 2;
-        if (arr[mid] == target)
-        {
-            return mid;
-        }
-        else if (arr[mid] >= arr[0])
-        {
-            if (arr[start] <= target && arr[mid] >= target)
-            {
-                end = mid - 1;
-            }
-            else
-            {
-                start = mid + 1;
-            }
-        }
-        else
-        {
-            if (arr[mid] <= target && arr[end] >= target)
-            {
-                start = mid + 1;
-            }
-            else
-            {
-                end = mid - 1;
-            }
-        }
-    }
-    return -1;
-}
+// // Q3. Search in Rotated Sorted Array.
+// int search(vector<int> &arr, int target)
+// {
+//     int start = 0, end = arr.size() - 1, mid;
+//     while (start <= end)
+//     {
+//         mid = start + (end - start) / 2;
+//         if (arr[mid] == target)
+//         {
+//             return mid;
+//         }
+//         else if (arr[mid] >= arr[0])
+//         {
+//             if (arr[start] <= target && arr[mid] >= target)
+//             {
+//                 end = mid - 1;
+//             }
+//             else
+//             {
+//                 start = mid + 1;
+//             }
+//         }
+//         else
+//         {
+//             if (arr[mid] <= target && arr[end] >= target)
+//             {
+//                 start = mid + 1;
+//             }
+//             else
+//             {
+//                 end = mid - 1;
+//             }
+//         }
+//     }
+//     return -1;
+// }
 
-// Q4. Kth Missing Positive Number.
-int findKthPositive(vector<int> &arr, int k)
-{
-    int start = 0, end = arr.size() - 1, ans = arr.size();
-    while (start <= end)
-    {
-        int mid = start + (end - start) / 2;
-        if (arr[mid] - mid - 1 >= k)
-        {
-            ans = mid;
-            end = mid - 1;
-        }
-        else
-        {
-            start = mid + 1;
-        }
-    }
+// // Q4. Kth Missing Positive Number.
+// int findKthPositive(vector<int> &arr, int k)
+// {
+//     int start = 0, end = arr.size() - 1, ans = arr.size();
+//     while (start <= end)
+//     {
+//         int mid = start + (end - start) / 2;
+//         if (arr[mid] - mid - 1 >= k)
+//         {
+//             ans = mid;
+//             end = mid - 1;
+//         }
+//         else
+//         {
+//             start = mid + 1;
+//         }
+//     }
 
-    return ans + k;
-}
+//     return ans + k;
+// }
 
-int main()
-{
-}
+// int main()
+// {
+// }
